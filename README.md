@@ -1,6 +1,7 @@
 # Flash-Card-App
 This is a mobile app that help you make flashcards to study from.
-![2ugGYeA8]https://user-images.githubusercontent.com/40745961/113486283-c9e90a00-9466-11eb-8a40-61a123131a6e.gif
+
+![2ugGYeA8](https://user-images.githubusercontent.com/40745961/113486283-c9e90a00-9466-11eb-8a40-61a123131a6e.gif)
 
 ## Tech Stack
 - Written in Swift
