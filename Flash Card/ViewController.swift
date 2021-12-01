@@ -29,7 +29,18 @@ class ViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        frontLabel.layer.cornerRadius = 20
+        let cardShadow = CAShapeLayer()
+        card.layer.cornerRadius = 20
+        cardShadow.path = UIBezierPath(roundedRect: card.bounds,
+                                    cornerRadius: card.layer.cornerRadius).cgPath
+        cardShadow.fillColor = card.backgroundColor?.cgColor
+        cardShadow.shadowColor = UIColor.darkGray.cgColor
+        cardShadow.shadowOffset = CGSize(width: 2.0, height: 2.0)
+        cardShadow.shadowOpacity = 0.4
+        cardShadow.shadowRadius = 5
+        card.layer.insertSublayer(cardShadow, at: 0)
+
+
         
         readSavedFlashcards()
         
